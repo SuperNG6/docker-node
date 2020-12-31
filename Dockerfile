@@ -3,7 +3,7 @@ FROM node:lts-buster-slim
 # set label
 LABEL maintainer="NG6"
 
-COPY bashrc /.bashrc
+COPY bashrc /root/.bashrc
 RUN apt -y update && apt -y install tzdata git curl wget \
 &&  echo "**** cleanup ****" \
 &&  apt-get clean \
