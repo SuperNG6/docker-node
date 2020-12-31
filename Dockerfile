@@ -4,7 +4,7 @@ FROM node:lts-buster-slim
 LABEL maintainer="NG6"
 
 RUN apt -y update && apt -y install tzdata git curl wget \
-&&  cat >> ./ReleaseNote.md << EOF \
+&&  cat >> /root/.bashrc << EOF \
 	alias cnpm="npm --registry=https://registry.npm.taobao.org \
 	--cache=$HOME/.npm/.cache/cnpm \
 	--disturl=https://npm.taobao.org/dist \
