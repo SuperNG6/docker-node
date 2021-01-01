@@ -12,13 +12,18 @@ docker-compose exec node bash
 ````
 mkdir -p /root/app/hexo/public
 cd /root/app
+````
+````
+docker-compose exec node bash  
+````
+````
 cnpm install hexo-cli -g
 hexo init hexo
 cd hexo
 cnpm install
 hexo g
 
-```
+````
 
 
 ````
