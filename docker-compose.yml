@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+
+  node:
+    image: superng6/node:latest
+    container_name: node
+    tty: true
+    volumes:
+      - /root/app:/app
+
+  web:
+    image: superng6/darkhttpd:latest
+    container_name: web
+    command: /www/public
+    ports:
+      - 80:80
+    volumes:
+      - /root/app/hexo:/www
+    depends_on:
+      - node
