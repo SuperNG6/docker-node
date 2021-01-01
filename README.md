@@ -6,8 +6,7 @@ https://hub.docker.com/r/superng6/node
 ## 快速搭建hexo测试环境
 使用轻量级http服务器darkhttpd，挂载hexo`./public`文件夹，实时查看修改效果  
 推荐使用VSC远程开发，操作node容器  
-docker-compose -d  
-docker-compose exec node bash  
+
 
 ````
 mkdir -p /root/app/hexo/public
