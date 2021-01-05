@@ -9,8 +9,9 @@ https://hub.docker.com/r/superng6/node
 
 
 ````
-mkdir -p /root/app/hexo/public
-cd /root/app
+wget -q -P /root/app https://raw.githubusercontent.com/SuperNG6/docker-node/main/docker-compose.yml
+docker-compose up -d
+
 ````
 ````
 docker-compose exec node bash  
